@@ -94,7 +94,7 @@ anysdk.agentManager.getIAPPlugins = function () {
     var plugins = this._getIAPPlugin();
     if (plugins) {
         for (var item in plugins){
-            if （plugins.hasOwnProperty(item)){
+            if (plugins.hasOwnProperty(item)){
                 var plugin = plugins[item];
                 if (!plugin.isInitialized) {
                     anysdk.registerAPIs(plugin);
@@ -111,7 +111,7 @@ anysdk.agentManager.getIAPPlugin = function () {
     var iapPlugins = anysdk.agentManager.getIAPPlugins();
     if(iapPlugins != null){
         for(var item in iapPlugins){
-            if （iapPlugins.hasOwnProperty(item)){
+            if (iapPlugins.hasOwnProperty(item)){
                 return iapPlugins[item];
             }
         }
